@@ -1,7 +1,13 @@
 import Database from 'better-sqlite3';
 import { join } from 'path';
+import { existsSync } from 'fs';
 
-const DB_PATH = process.env.DATABASE_PATH || join(process.cwd(), 'data', 'socialscrubb.db');
+// Support both new and legacy database paths for backward compatibility
+const DEFAULT_DB_PATH = join(process.cwd(), 'data', 'floppy-disk.db');
+const LEGACY_DB_PATH = join(process.cwd(), 'data', 'socialscrubb.db');
+
+const DB_PATH = process.env.DATABASE_PATH || 
+  (existsSync(LEGACY_DB_PATH) ? LEGACY_DB_PATH : DEFAULT_DB_PATH);
 
 let db: Database.Database | null = null;
 

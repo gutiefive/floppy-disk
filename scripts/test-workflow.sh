@@ -2,7 +2,7 @@
 
 set -e
 
-echo "=== Socialscrubb Complete Workflow Test ==="
+echo "=== floppy-disk Complete Workflow Test ==="
 echo ""
 
 BASE_URL="http://localhost:3000"

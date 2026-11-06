@@ -1,8 +1,8 @@
-# Socialscrubb Architecture
+# floppy-disk Architecture
 
 ## Overview
 
-Socialscrubb is a privacy-first social media reputation review application built as a self-hosted Next.js application with local SQLite storage and Ollama AI analysis.
+floppy-disk is a privacy-first social media reputation review application built as a self-hosted Next.js application with local SQLite storage and Ollama AI analysis.
 
 ## Architecture Principles
 
@@ -386,7 +386,7 @@ npm start
 ```
 OLLAMA_HOST=http://127.0.0.1:11434
 OLLAMA_MODEL=mistral:7b-instruct
-DATABASE_PATH=./data/socialscrubb.db
+DATABASE_PATH=./data/floppy-disk.db
 ENABLE_CLOUD_AI=false
 ```
 

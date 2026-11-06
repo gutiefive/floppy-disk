@@ -1,8 +1,8 @@
-# Socialscrubb Usage Guide
+# floppy-disk Usage Guide
 
 ## Overview
 
-Socialscrubb helps you review your own social media history before employers conduct background checks. It identifies posts that may warrant review, but never predicts hiring outcomes or claims posts are "disqualifying."
+floppy-disk helps you review your own social media history before employers conduct background checks. It identifies posts that may warrant review, but never predicts hiring outcomes or claims posts are "disqualifying."
 
 ## Getting Started
 
@@ -16,7 +16,7 @@ Socialscrubb helps you review your own social media history before employers con
 
 ### 2. Import Your Data
 
-1. Open Socialscrubb at `http://localhost:3000`
+1. Open floppy-disk at `http://localhost:3000`
 2. Under "Import Facebook Archive", click "Choose File"
 3. Select your Facebook export file (.json, .zip, or .html)
 4. Click "Upload"

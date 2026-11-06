@@ -1,4 +1,4 @@
-# Socialscrubb Setup Guide
+# floppy-disk Setup Guide
 
 ## System Requirements
 
@@ -82,7 +82,7 @@ The application will be available at `http://localhost:3000`
 ollama serve
 
 # Terminal 2: Start application
-cd /path/to/socialscrubb
+cd /path/to/floppy-disk
 npm run dev
 ```
 
@@ -105,7 +105,7 @@ Expected response:
 
 ## Data Storage
 
-- Database: `./data/socialscrubb.db`
+- Database: `./data/floppy-disk.db` (legacy `./data/socialscrubb.db` also supported)
 - Uploads: `./uploads/`
 - Ollama models: `~/.ollama/models/`
 

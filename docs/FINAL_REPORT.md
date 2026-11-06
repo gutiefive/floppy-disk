@@ -1,14 +1,14 @@
-# Socialscrubb Rebuild - Final Report
+# floppy-disk Rebuild - Final Report
 
 **Date**: November 6, 2026  
-**Repository**: https://github.com/gutiefive/socialscrubb  
-**Pull Request**: https://github.com/gutiefive/socialscrubb/pull/1  
+**Repository**: https://github.com/gutiefive/floppy-disk  
+**Pull Request**: https://github.com/gutiefive/floppy-disk/pull/1  
 **Branch**: cursor/socialscrubb-rebuild-5b4b  
 **Base Branch**: main  
 
 ## Executive Summary
 
-Successfully rebuilt Socialscrubb from scratch as a complete, functional, privacy-first social media reputation review application. The core workflow (Facebook import → local AI analysis → review) is **working and verified** with real Ollama inference.
+Successfully rebuilt floppy-disk from scratch as a complete, functional, privacy-first social media reputation review application. The core workflow (Facebook import → local AI analysis → review) is **working and verified** with real Ollama inference.
 
 ## What Was Built
 
@@ -210,9 +210,9 @@ npm run dev
 - **Status**: Pushed to origin, PR created
 
 ### Pull Request
-- **URL**: https://github.com/gutiefive/socialscrubb/pull/1
+- **URL**: https://github.com/gutiefive/floppy-disk/pull/1
 - **Status**: Open
-- **Title**: Complete Socialscrubb Rebuild: Privacy-First Social Media Reputation Review
+- **Title**: Complete floppy-disk Rebuild: Privacy-First Social Media Reputation Review
 - **Files Changed**: 36 files added/modified
 
 ## Performance Characteristics
@@ -311,7 +311,7 @@ See [docs/ACCEPTANCE_TEST_RESULTS.md](ACCEPTANCE_TEST_RESULTS.md) for detailed r
 ### For Immediate Use
 The application is **ready for personal use** to review Facebook history. The owner can:
 1. Export their Facebook data
-2. Import it into Socialscrubb
+2. Import it into floppy-disk
 3. Run local AI analysis
 4. Review flagged items
 5. Make decisions about their content
@@ -353,7 +353,7 @@ To improve analysis speed:
 
 ## Conclusion
 
-Socialscrubb has been successfully rebuilt as a **functional, privacy-first social media reputation review application**. The core workflow is working and verified with real AI inference.
+floppy-disk has been successfully rebuilt as a **functional, privacy-first social media reputation review application**. The core workflow is working and verified with real AI inference.
 
 ### What Works ✅
 - Facebook import with realistic data handling

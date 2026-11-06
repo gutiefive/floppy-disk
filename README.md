@@ -1,10 +1,10 @@
-# Socialscrubb
+# floppy-disk
 
 Privacy-first social media reputation review application built to help individuals review their own social media history before employment background checks.
 
 ## Overview
 
-Socialscrubb analyzes your social media posts using local AI (Ollama) to identify content that may warrant review before a job interview. All analysis happens on your local machine with no data sent to external services.
+floppy-disk analyzes your social media posts using local AI (Ollama) to identify content that may warrant review before a job interview. All analysis happens on your local machine with no data sent to external services.
 
 **Important**: This tool helps YOU review your content. It never predicts hiring outcomes, claims posts are "disqualifying," or makes decisions for you.
 
@@ -116,7 +116,7 @@ npm run build
 
 ## Data Management
 
-- Database: `./data/socialscrubb.db`
+- Database: `./data/floppy-disk.db` (legacy `./data/socialscrubb.db` also supported)
 - Uploads: `./uploads/`
 - Ollama models: `~/.ollama/models/`
 

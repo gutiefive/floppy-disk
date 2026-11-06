@@ -195,7 +195,7 @@ export default function Home() {
     <main className="min-h-screen bg-background p-8">
       <div className="max-w-7xl mx-auto space-y-8">
         <div>
-          <h1 className="text-4xl font-bold mb-2">Socialscrubb</h1>
+          <h1 className="text-4xl font-bold mb-2">floppy-disk</h1>
           <p className="text-muted-foreground">
             Privacy-first social media reputation review for your job search
           </p>

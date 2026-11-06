@@ -1,4 +1,4 @@
-# Acceptance Test Results
+# floppy-disk Acceptance Test Results
 
 Date: November 6, 2026  
 Environment: Ubuntu 24.04, 4 CPU cores, 5GB RAM  
@@ -387,6 +387,6 @@ The application successfully demonstrates:
 
 ## Conclusion
 
-The core Socialscrubb application is **functionally complete for the primary use case**: helping someone review their Facebook history using local AI before a job interview. The system successfully imports data, performs AI analysis, and stores results—all while keeping data private and local.
+The core floppy-disk application is **functionally complete for the primary use case**: helping someone review their Facebook history using local AI before a job interview. The system successfully imports data, performs AI analysis, and stores results—all while keeping data private and local.
 
 Additional features (exports, media analysis, more platforms) are planned but the MVP is working and usable.

@@ -1,0 +1,91 @@
+[
+  {
+    "tweet": {
+      "id_str": "1234567890123456789",
+      "full_text": "Excited to start my new role next month! Looking forward to contributing to the team and making a positive impact. #NewBeginnings",
+      "created_at": "Wed Jan 15 14:30:00 +0000 2020",
+      "retweet_count": 5,
+      "favorite_count": 23,
+      "entities": {
+        "hashtags": [
+          {
+            "text": "NewBeginnings"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "tweet": {
+      "id_str": "2345678901234567890",
+      "full_text": "Grateful for the opportunity to volunteer at the community center this weekend. It's important to give back to our community.",
+      "created_at": "Sat Mar 21 10:15:00 +0000 2019",
+      "retweet_count": 2,
+      "favorite_count": 12
+    }
+  },
+  {
+    "tweet": {
+      "id_str": "3456789012345678901",
+      "full_text": "@friend Thanks for sharing that article! Really interesting perspective on workplace collaboration.",
+      "created_at": "Mon Nov 11 16:45:00 +0000 2018",
+      "in_reply_to_status_id_str": "3456789012345678900",
+      "in_reply_to_user_id_str": "9876543210",
+      "in_reply_to_screen_name": "friend",
+      "retweet_count": 0,
+      "favorite_count": 3
+    }
+  },
+  {
+    "tweet": {
+      "id_str": "4567890123456789012",
+      "full_text": "This traffic is unreal today. Worst commute in months.",
+      "created_at": "Fri Aug 10 08:30:00 +0000 2018",
+      "retweet_count": 0,
+      "favorite_count": 1
+    }
+  },
+  {
+    "tweet": {
+      "id_str": "5678901234567890123",
+      "full_text": "Sharing this important message about online safety. Everyone should read this.",
+      "created_at": "Tue May 05 12:00:00 +0000 2017",
+      "retweet_count": 50,
+      "favorite_count": 87,
+      "retweeted_status": {
+        "id_str": "5678901234567890122",
+        "full_text": "Protect your personal information online. Here are 5 essential tips for digital privacy.",
+        "user": {
+          "screen_name": "CyberSecurityOrg"
+        }
+      }
+    }
+  },
+  {
+    "tweet": {
+      "id_str": "6789012345678901234",
+      "full_text": "Just watched an amazing documentary about space exploration. Highly recommend it to anyone interested in science!",
+      "created_at": "Sun Feb 14 19:30:00 +0000 2016",
+      "retweet_count": 8,
+      "favorite_count": 15
+    }
+  },
+  {
+    "tweet": {
+      "id_str": "7890123456789012345",
+      "full_text": "Respectfully disagree with this approach. I believe there are better ways to address the issue while respecting everyone involved.",
+      "created_at": "Wed Sep 23 14:20:00 +0000 2015",
+      "retweet_count": 1,
+      "favorite_count": 4
+    }
+  },
+  {
+    "tweet": {
+      "id_str": "8901234567890123456",
+      "full_text": "Congratulations to the team on a successful project completion! Great collaboration from everyone involved.",
+      "created_at": "Thu Jun 18 11:45:00 +0000 2015",
+      "retweet_count": 3,
+      "favorite_count": 19
+    }
+  }
+]

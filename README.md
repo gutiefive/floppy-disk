@@ -11,13 +11,14 @@ floppy-disk analyzes your social media posts using local AI (Ollama) to identify
 ## Features
 
 - ✅ **Facebook Import**: JSON, HTML, and ZIP exports
+- ✅ **X/Twitter Import**: ZIP archives and tweets.js files
 - ✅ **Local AI Analysis**: Using Ollama with Mistral 7B
 - ✅ **Privacy-First**: All data stays on your machine
 - ✅ **Professional Assessment**: Identifies potential reputation concerns
 - ✅ **Faith-Context Awareness**: Additional review for religious organizations
 - ✅ **Review Workflow**: Track reviewed items and add notes
 - ✅ **Persistent Storage**: SQLite database for audit trail
-- 🚧 **Additional Platforms**: Twitter, Instagram, Reddit (planned)
+- 🚧 **Additional Platforms**: Instagram, Reddit, TikTok (planned)
 - 🚧 **Export Reports**: CSV, JSON, PDF (planned)
 
 ## Quick Start
@@ -59,11 +60,13 @@ Open `http://localhost:3000` in your browser.
 
 ## Usage
 
-1. **Export** your Facebook data (Settings → Your Information → Download)
-2. **Import** the export file (JSON, HTML, or ZIP)
+1. **Export** your social media data:
+   - Facebook: Settings → Your Information → Download
+   - X/Twitter: Settings → Your account → Download archive
+2. **Import** the export file (JSON, HTML, ZIP, or tweets.js)
 3. **Analyze** posts using local AI
 4. **Review** flagged items and add notes
-5. **Export** results for your records
+5. **Export** results for your records (coming soon)
 
 See [docs/USAGE.md](docs/USAGE.md) for detailed instructions.
 

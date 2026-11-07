@@ -56,6 +56,7 @@ export default function Home() {
   const [uploading, setUploading] = useState(false);
   const [analyzing, setAnalyzing] = useState(false);
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
+  const [selectedPlatform, setSelectedPlatform] = useState<string>('facebook');
   const [searchQuery, setSearchQuery] = useState('');
   const [filterPriority, setFilterPriority] = useState<string | null>(null);
 
@@ -113,7 +114,7 @@ export default function Home() {
     try {
       const formData = new FormData();
       formData.append('file', selectedFile);
-      formData.append('platform', 'facebook');
+      formData.append('platform', selectedPlatform);
 
       const response = await fetch('/api/imports', {
         method: 'POST',
@@ -269,26 +270,49 @@ export default function Home() {
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <Upload className="w-5 h-5" />
-              Import Facebook Archive
+              Import Social Media Archive
             </CardTitle>
             <CardDescription>
-              Upload your Facebook data export (JSON, HTML, or ZIP)
+              Upload your data export from Facebook or X/Twitter
             </CardDescription>
           </CardHeader>
           <CardContent>
-            <div className="flex gap-4">
-              <Input
-                type="file"
-                accept=".json,.html,.htm,.zip"
-                onChange={handleFileSelect}
-                disabled={uploading}
-              />
-              <Button
-                onClick={handleUpload}
-                disabled={!selectedFile || uploading}
-              >
-                {uploading ? 'Uploading...' : 'Upload'}
-              </Button>
+            <div className="space-y-4">
+              <div className="flex gap-2">
+                <Button
+                  variant={selectedPlatform === 'facebook' ? 'default' : 'outline'}
+                  onClick={() => setSelectedPlatform('facebook')}
+                  size="sm"
+                >
+                  Facebook
+                </Button>
+                <Button
+                  variant={selectedPlatform === 'twitter' ? 'default' : 'outline'}
+                  onClick={() => setSelectedPlatform('twitter')}
+                  size="sm"
+                >
+                  X/Twitter
+                </Button>
+              </div>
+              <div className="flex gap-4">
+                <Input
+                  type="file"
+                  accept={selectedPlatform === 'facebook' ? '.json,.html,.htm,.zip' : '.json,.js,.zip'}
+                  onChange={handleFileSelect}
+                  disabled={uploading}
+                />
+                <Button
+                  onClick={handleUpload}
+                  disabled={!selectedFile || uploading}
+                >
+                  {uploading ? 'Uploading...' : 'Upload'}
+                </Button>
+              </div>
+              <p className="text-xs text-muted-foreground">
+                {selectedPlatform === 'facebook' 
+                  ? 'Accepts JSON, HTML, or ZIP exports from Facebook'
+                  : 'Accepts ZIP archives or tweets.js files from X/Twitter'}
+              </p>
             </div>
           </CardContent>
         </Card>

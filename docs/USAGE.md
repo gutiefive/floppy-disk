@@ -6,7 +6,9 @@ floppy-disk helps you review your own social media history before employers cond
 
 ## Getting Started
 
-### 1. Export Your Facebook Data
+### 1. Export Your Social Media Data
+
+#### Facebook Export
 
 1. Go to Facebook Settings → Your Facebook Information
 2. Download Your Information → Request Download
@@ -14,11 +16,23 @@ floppy-disk helps you review your own social media history before employers cond
 4. Include: Posts, Comments, Photos
 5. Download when ready (may take hours to prepare)
 
+#### X/Twitter Export
+
+1. Go to X Settings → Your account
+2. Click "Download an archive of your data"
+3. Request archive (you'll receive an email when ready)
+4. Download the ZIP file when available (usually 24 hours)
+5. For help: https://help.x.com/en/managing-your-account/how-to-download-your-x-archive
+
+**Note**: X archives are typically ZIP files containing a `data/tweets.js` file with your tweets.
+
 ### 2. Import Your Data
 
 1. Open floppy-disk at `http://localhost:3000`
-2. Under "Import Facebook Archive", click "Choose File"
-3. Select your Facebook export file (.json, .zip, or .html)
+2. Under "Import Social Media Archive", select your platform (Facebook or X/Twitter)
+3. Click "Choose File" and select your export file:
+   - Facebook: `.json`, `.zip`, or `.html` file
+   - X/Twitter: `.zip` archive or `tweets.js` file
 4. Click "Upload"
 5. Wait for import to complete (progress shown in notification)
 

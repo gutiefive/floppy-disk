@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { v4 as uuidv4 } from 'uuid';
 import { getDb } from '@/lib/db';
 import { FacebookConnector } from '@/connectors/facebook';
+import { TwitterConnector } from '@/connectors/twitter';
 import type { Import } from '@/types';
 
 export async function GET() {
@@ -42,6 +43,11 @@ export async function POST(request: NextRequest) {
 
     if (platform === 'facebook') {
       const connector = new FacebookConnector(importId);
+      const result = await connector.processFile(buffer, file.name);
+      processed = result.processed;
+      failed = result.failed;
+    } else if (platform === 'twitter') {
+      const connector = new TwitterConnector(importId);
       const result = await connector.processFile(buffer, file.name);
       processed = result.processed;
       failed = result.failed;
